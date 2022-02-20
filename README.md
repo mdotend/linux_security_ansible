@@ -1,2 +1,3 @@
 # linux_security_ansible
 
+Ansible adaptation of this linux server security guide: https://github.com/imthenachoman/How-To-Secure-A-Linux-Server
