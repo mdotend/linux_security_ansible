@@ -1,0 +1,6 @@
+---
+- name: Apply security
+  hosts: all
+  remote_user: root
+  roles:
+    - role: server

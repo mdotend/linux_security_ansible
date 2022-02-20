@@ -1,0 +1,7 @@
+- name: Deploy authorized keys
+  authorized_key:
+    user: root
+    state: present
+    key: "{{ item }}"
+  with_file:
+    - public_keys/marcel-laptop

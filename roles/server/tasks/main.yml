@@ -1,0 +1,2 @@
+- name: Secure the SSH Service
+  import_tasks: ssh.yml
