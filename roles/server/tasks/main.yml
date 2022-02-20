@@ -1,2 +1,5 @@
 - name: Secure the SSH Service
   import_tasks: ssh.yml
+
+- name: ensure ntp
+  import_tasks: ntp.yml
