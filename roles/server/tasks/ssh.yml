@@ -5,3 +5,14 @@
     key: "{{ item }}"
   with_file:
     - public_keys/marcel-laptop
+
+- name: Copy sshd_config
+  ansible.builtin.template: 
+    src: sshd_config 
+    dest: /etc/ssh/sshd_config 
+    owner: root 
+    group: root 
+    mode: 0600
+    validate: /usr/sbin/sshd -t -f %s
+  notify:
+    - Restart ssh

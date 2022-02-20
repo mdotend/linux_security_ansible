@@ -4,3 +4,9 @@
   remote_user: root
   roles:
     - role: server
+
+  handlers:
+    - name: Restart ssh
+      ansible.builtin.service:
+        name: ssh
+        state: restarted
