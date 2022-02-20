@@ -6,4 +6,5 @@ Ansible adaptation of this linux server security guide: https://github.com/imthe
 - [ ] fireall with nftables
 - [ ] fail2ban
 - [ ] rkhunter
+- [ ] centralised logging
 - [ ] docker non root
